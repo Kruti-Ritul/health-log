@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:contentDescription="image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="monospace"
+        android:text="WELCOME TO HEALTH LOG"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BFB9B9"
+        android:hint="Name"
+        android:textColor="#000000" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gender" />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:baselineAligned="false"
+        android:text="Next" />
+</LinearLayout>

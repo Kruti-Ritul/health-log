@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medicine Name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE THE TYPE OF MEDICINE"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="225dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Syringe" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Syrup" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pills" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tablet" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="CHOOSE THE DATE AND TIME OF YOUR REMINDER"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <DatePicker
+            android:id="@+id/drugdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_gravity="center"
+            android:scaleY="0.7"
+            android:scaleX="0.7"/>
+
+        <TimePicker
+            android:id="@+id/drugtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:timePickerMode="spinner"
+            android:layout_gravity="center"
+            android:scaleY="0.7"
+            android:scaleX="0.7"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btncon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="confirm reminder dates"/>
+
+</LinearLayout>
